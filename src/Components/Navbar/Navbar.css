@@ -32,6 +32,10 @@ header {
     height: 30px;
 }
 
+.logo a {
+    text-decoration: none;
+}
+
 .nav-links {
     list-style: none;
     padding: 0;
@@ -40,7 +44,7 @@ header {
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .nav-links li a {
@@ -60,7 +64,8 @@ header {
     gap: 10px;
 }
 
-.auth-buttons button {
+.login-button,
+.signup-button {
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
@@ -71,7 +76,8 @@ header {
     cursor: pointer;
 }
 
-.auth-buttons button:hover {
+.login-button:hover,
+.signup-button:hover {
     background-color: #541242;
 }
 
