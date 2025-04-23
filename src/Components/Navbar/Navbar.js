@@ -28,6 +28,7 @@ function Navbar() {
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/appointments">Appointments</Link></li>
                 <li><Link to="/reviews">Reviews</Link></li>
+                <li><Link to='/instant-consultation'>Instant Consultation</Link></li>
             </ul>
             <div className="auth-buttons" id="authButtons">
                 {authToken ? (

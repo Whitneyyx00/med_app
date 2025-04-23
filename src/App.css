@@ -1,5 +1,16 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column; /*Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure it takes up at least the full viewport height */
+    text-align: center;
 }
 
 .App-logo {
