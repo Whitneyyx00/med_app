@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     background-color: #947eb0;
     position: fixed;
@@ -42,11 +47,32 @@ header {
     color: #d8bfaa;
     text-decoration: none;
     font-size: 1em;
+    font-weight: bold;
 }
 
 .nav-links li a:hover {
     text-decoration: underline;
     font-weight: bold;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #72195A;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-buttons button:hover {
+    background-color: #541242;
 }
 
 body {

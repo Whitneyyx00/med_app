@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    height: 500px;
+    /* Reduced height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    /* Gradient Background */
+    background: linear-gradient(to right, #2190FF, #b673f8);
+    color: white;
+    /* Ensure text is readable on the gradient background */
+}
+
+section.hero-section {
+    width: 100vw;
+}
+
+.hero-content h1,
+.hero-content p {
+    color: white;
+    /* Ensure text is readable on the gradient background */
+}
+
+.hero-content a {
+    background-color: #914add !important;
+    color: white;
+}
+
+.hero-content a:hover {
+    background-color: #22a4d3;
+    font-weight: bold;
+    outline: 1px solid black;
+}
+
+.book-appointment-button {
+    background-color: #914add;
+    color: white;
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.book-appointment-button:hover {
+    background-color: #22a4d3;
+    font-weight: bold;
+    outline: 1px solid black;
+}
+
+/* Appointments Section Styles */
+.appointments-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.appointments-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.appointments-section input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.doctor-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+.doctor-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.doctor-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.doctor-card p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.doctor-card .rating {
+    color: #ffc107;
+    margin-bottom: 15px;
+}
+
+.view-details-button,
+.book-appointment-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2190FF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.view-details-button:hover,
+.book-appointment-button:hover {
+    background-color: #1976D2;
+}
+
+/* Reviews Section Styles */
+.reviews-section {
+    padding: 50px 20px;
+}
+
+.reviews-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reviews-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.reviews-section th,
+.reviews-section td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.reviews-section th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.give-review-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #2190FF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.give-review-button:hover {
+    background-color: #1976D2;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ddd;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    max-width: 600px;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Elements inside Modal */
+.modal label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.modal input[type="text"],
+.modal input[type="date"],
+.modal input[type="email"],
+.modal input[type="password"],
+.modal select,
+.modal textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Make sure padding doesn't affect width */
+}
+
+.modal textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.modal button {
+    background-color: #2190FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+    background-color: #1976D2;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .hero-section {
+        padding: 30px 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .appointments-section input[type="text"] {
+        width: 95%;
+    }
+}
