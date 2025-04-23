@@ -15,7 +15,7 @@ body {
     align-content: space-between;
 }
 
-.signup-container {
+.container {
     background-color: #fff;
     margin: 100px 600px;
     padding: 20px;
@@ -53,13 +53,13 @@ body {
     margin-top: 5px;
 }
 
-.form-buttons {
+button {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.form-buttons button {
+button {
     background-color: #947eb0; /* Teal */
     color: #D8BFAA; /* Beige */
     padding: 10px 20px;
@@ -70,6 +70,6 @@ body {
     margin: 0 10px;
 }
 
-.form-buttons button:hover {
+button:hover {
     background-color: #72195a; /* A darker shade of teal */
 }
