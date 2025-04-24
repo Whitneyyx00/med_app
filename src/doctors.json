@@ -1,0 +1,401 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Jiao Yang",
+    "rating": "★★★★☆",
+    "speciality": "Dentist",
+    "experience": 10
+  },
+  {
+    "id": 2,
+    "name": "Dr. Denis Raj",
+    "rating": "★★★★★",
+    "speciality": "Dentist",
+    "experience": 5
+  },
+  {
+    "id": 3,
+    "name": "Dr. Lyn Christie",
+    "rating": "★★★★☆",
+    "speciality": "Dentist",
+    "experience": 12
+  },
+  {
+    "id": 4,
+    "name": "Dr. Jessica White",
+    "rating": "★★★☆☆",
+    "speciality": "Dentist",
+    "experience": 8
+  },
+  {
+    "id": 5,
+    "name": "Dr. Sarah Johnson",
+    "rating": "★★★★★",
+    "speciality": "Dentist",
+    "experience": 15
+  },
+  {
+    "id": 6,
+    "name": "Dr. David Anderson",
+    "rating": "★★★★☆",
+    "speciality": "Dentist",
+    "experience": 7
+  },
+  {
+    "id": 7,
+    "name": "Dr. Kevin Miller",
+    "rating": "★★★☆☆",
+    "speciality": "Dentist",
+    "experience": 9
+  },
+  {
+    "id": 8,
+    "name": "Dr. Stephny Grosh",
+    "rating": "★★★★☆",
+    "speciality": "Dentist",
+    "experience": 11
+  },
+  {
+    "id": 9,
+    "name": "Dr. Elizabeth Clark",
+    "rating": "★★★★★",
+    "speciality": "Gynecologist/Obstetrician",
+    "experience": 20
+  },
+  {
+    "id": 10,
+    "name": "Dr. Eugene J. Turner",
+    "rating": "★★★★☆",
+    "speciality": "Gynecologist/Obstetrician",
+    "experience": 14
+  },
+  {
+    "id": 11,
+    "name": "Dr. Alan Dalkin",
+    "rating": "★★★☆☆",
+    "speciality": "Gynecologist/Obstetrician",
+    "experience": 6
+  },
+  {
+    "id": 12,
+    "name": "Dr. Emily Clark",
+    "rating": "★★★★★",
+    "speciality": "Gynecologist/Obstetrician",
+    "experience": 18
+  },
+  {
+    "id": 13,
+    "name": "Dr. Samantha Turner",
+    "rating": "★★★★☆",
+    "speciality": "Gynecologist/Obstetrician",
+    "experience": 9
+  },
+  {
+    "id": 14,
+    "name": "Dr. Rachel Parker",
+    "rating": "★★★☆☆",
+    "speciality": "Gynecologist/Obstetrician",
+    "experience": 12
+  },
+  {
+    "id": 15,
+    "name": "Dr. Richard Pearson",
+    "rating": "★★★★★",
+    "speciality": "General Physician",
+    "experience": 22
+  },
+  {
+    "id": 16,
+    "name": "Dr. Mark D. Okusa",
+    "rating": "★★★★☆",
+    "speciality": "General Physician",
+    "experience": 16
+  },
+  {
+    "id": 17,
+    "name": "Dr. Michael Smith",
+    "rating": "★★★☆☆",
+    "speciality": "General Physician",
+    "experience": 8
+  },
+  {
+    "id": 18,
+    "name": "Dr. Laura Taylor",
+    "rating": "★★★★☆",
+    "speciality": "General Physician",
+    "experience": 11
+  },
+  {
+    "id": 19,
+    "name": "Dr. Maria Rodriguez",
+    "rating": "★★★★★",
+    "speciality": "Cardiologist",
+    "experience": 13
+  },
+  {
+    "id": 20,
+    "name": "Dr. James Wilson",
+    "rating": "★★★★☆",
+    "speciality": "Cardiologist",
+    "experience": 7
+  },
+  {
+    "id": 21,
+    "name": "Dr. Karen Davis",
+    "rating": "★★★☆☆",
+    "speciality": "Cardiologist",
+    "experience": 19
+  },
+  {
+    "id": 22,
+    "name": "Dr. Brian Garcia",
+    "rating": "★★★★☆",
+    "speciality": "Dermatologist",
+    "experience": 10
+  },
+  {
+    "id": 23,
+    "name": "Dr. Michelle Martinez",
+    "rating": "★★★★★",
+    "speciality": "Dermatologist",
+    "experience": 5
+  },
+  {
+    "id": 24,
+    "name": "Dr. Robert Anderson",
+    "rating": "★★★★☆",
+    "speciality": "Dermatologist",
+    "experience": 12
+  },
+  {
+    "id": 25,
+    "name": "Dr. Lisa Thomas",
+    "rating": "★★★☆☆",
+    "speciality": "Endocrinologist",
+    "experience": 8
+  },
+  {
+    "id": 26,
+    "name": "Dr. Christopher Jackson",
+    "rating": "★★★★★",
+    "speciality": "Endocrinologist",
+    "experience": 15
+  },
+  {
+    "id": 27,
+    "name": "Dr. Angela White",
+    "rating": "★★★★☆",
+    "speciality": "Endocrinologist",
+    "experience": 7
+  },
+  {
+    "id": 28,
+    "name": "Dr. Steven Harris",
+    "rating": "★★★☆☆",
+    "speciality": "Gastroenterologist",
+    "experience": 9
+  },
+  {
+    "id": 29,
+    "name": "Dr. Linda Martin",
+    "rating": "★★★★☆",
+    "speciality": "Gastroenterologist",
+    "experience": 11
+  },
+  {
+    "id": 30,
+    "name": "Dr. Jeffrey King",
+    "rating": "★★★★★",
+    "speciality": "Gastroenterologist",
+    "experience": 13
+  },
+  {
+    "id": 31,
+    "name": "Dr. Patrick Wright",
+    "rating": "★★★★☆",
+    "speciality": "Neurologist",
+    "experience": 7
+  },
+  {
+    "id": 32,
+    "name": "Dr. Kimberly Green",
+    "rating": "★★★☆☆",
+    "speciality": "Neurologist",
+    "experience": 19
+  },
+  {
+    "id": 33,
+    "name": "Dr. Anthony Hall",
+    "rating": "★★★★☆",
+    "speciality": "Neurologist",
+    "experience": 10
+  },
+  {
+    "id": 34,
+    "name": "Dr. Christine Adams",
+    "rating": "★★★★★",
+    "speciality": "Ophthalmologist",
+    "experience": 5
+  },
+  {
+    "id": 35,
+    "name": "Dr. Timothy Nelson",
+    "rating": "★★★★☆",
+    "speciality": "Ophthalmologist",
+    "experience": 12
+  },
+  {
+    "id": 36,
+    "name": "Dr. Amanda Carter",
+    "rating": "★★★☆☆",
+    "speciality": "Ophthalmologist",
+    "experience": 8
+  },
+  {
+    "id": 37,
+    "name": "Dr. Brandon Mitchell",
+    "rating": "★★★★★",
+    "speciality": "Orthopedist",
+    "experience": 15
+  },
+  {
+    "id": 38,
+    "name": "Dr. Stephanie Roberts",
+    "rating": "★★★★☆",
+    "speciality": "Orthopedist",
+    "experience": 7
+  },
+  {
+    "id": 39,
+    "name": "Dr. Jonathan Phillips",
+    "rating": "★★★☆☆",
+    "speciality": "Orthopedist",
+    "experience": 9
+  },
+  {
+    "id": 40,
+    "name": "Dr. Teresa Campbell",
+    "rating": "★★★★☆",
+    "speciality": "Pediatrician",
+    "experience": 11
+  },
+  {
+    "id": 41,
+    "name": "Dr. Scott Parker",
+    "rating": "★★★★★",
+    "speciality": "Pediatrician",
+    "experience": 13
+  },
+  {
+    "id": 42,
+    "name": "Dr. Nicole Evans",
+    "rating": "★★★★☆",
+    "speciality": "Pediatrician",
+    "experience": 7
+  },
+  {
+    "id": 43,
+    "name": "Dr. Ashley Edwards",
+    "rating": "★★★☆☆",
+    "speciality": "Psychiatrist",
+    "experience": 19
+  },
+  {
+    "id": 44,
+    "name": "Dr. Justin Collins",
+    "rating": "★★★★☆",
+    "speciality": "Psychiatrist",
+    "experience": 10
+  },
+  {
+    "id": 45,
+    "name": "Dr. Heather Stewart",
+    "rating": "★★★★★",
+    "speciality": "Psychiatrist",
+    "experience": 5
+  },
+  {
+    "id": 46,
+    "name": "Dr. Benjamin Flores",
+    "rating": "★★★★☆",
+    "speciality": "Urologist",
+    "experience": 12
+  },
+  {
+    "id": 47,
+    "name": "Dr. Tiffany Morris",
+    "rating": "★★★☆☆",
+    "speciality": "Urologist",
+    "experience": 8
+  },
+  {
+    "id": 48,
+    "name": "Dr. Samuel Cook",
+    "rating": "★★★★★",
+    "speciality": "Urologist",
+    "experience": 15
+  },
+  {
+    "id": 49,
+    "name": "Dr. Victoria Reed",
+    "rating": "★★★★☆",
+    "speciality": "Ear-Nose-Throat (ENT) Specialist",
+    "experience": 7
+  },
+  {
+    "id": 50,
+    "name": "Dr. Alexander Bell",
+    "rating": "★★★☆☆",
+    "speciality": "Ear-Nose-Throat (ENT) Specialist",
+    "experience": 9
+  },
+  {
+    "id": 51,
+    "name": "Dr. Caroline Gray",
+    "rating": "★★★★☆",
+    "speciality": "Ear-Nose-Throat (ENT) Specialist",
+    "experience": 11
+  },
+  {
+    "id": 52,
+    "name": "Dr. Eleanor Price",
+    "rating": "★★★★★",
+    "speciality": "Homeopath",
+    "experience": 13
+  },
+  {
+    "id": 53,
+    "name": "Dr. Samuel Wright",
+    "rating": "★★★★☆",
+    "speciality": "Homeopath",
+    "experience": 7
+  },
+  {
+    "id": 54,
+    "name": "Dr. Penelope Hughes",
+    "rating": "★★★☆☆",
+    "speciality": "Homeopath",
+    "experience": 19
+  },
+  {
+    "id": 55,
+    "name": "Dr. Rohan Patel",
+    "rating": "★★★★☆",
+    "speciality": "Ayurveda Practitioner",
+    "experience": 10
+  },
+  {
+    "id": 56,
+    "name": "Dr. Anika Sharma",
+    "rating": "★★★★★",
+    "speciality": "Ayurveda Practitioner",
+    "experience": 5
+  },
+  {
+    "id": 57,
+    "name": "Dr. Vijay Kapoor",
+    "rating": "★★★★☆",
+    "speciality": "Ayurveda Practitioner",
+    "experience": 12
+  }
+]
