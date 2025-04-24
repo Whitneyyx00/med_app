@@ -29,6 +29,7 @@ function Navbar() {
                 <li><Link to="/appointments">Appointments</Link></li>
                 <li><Link to="/reviews">Reviews</Link></li>
                 <li><Link to='/instant-consultation'>Instant Consultation</Link></li>
+                <li><Link to='/book-consultation'>Book Consultation</Link></li>
                 <li><Link to='/find-a-doctor'>Find a Doctor</Link></li>
             </ul>
             <div className="auth-buttons" id="authButtons">
