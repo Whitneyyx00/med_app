@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './AppointmentForm.css';
 
-function AppointmentForm({ doctor, onClose }) {
+function AppointmentForm({ doctor, onClose, onAppointmentBooked }) {
     const [patientName, setPatientName] = useState('');
     const [appointmentDate, setAppointmentDate] = useState('');
     const [appointmentTime, setAppointmentTime] = useState('');
@@ -17,6 +17,11 @@ function AppointmentForm({ doctor, onClose }) {
         console.log('Date:', appointmentDate);
         console.log('Time:', appointmentTime);
         console.log('Phone Number:', phoneNumber);
+
+        // Simulate successful booking
+        setTimeout(() => {
+            onAppointmentBooked();
+        }, 1000);
         
         // After submitting, you might want to  close the form
         onClose();
