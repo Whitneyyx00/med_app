@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './DoctorCard.css';
+import AppointmentForm from '../AppointmentForm/AppointmentForm';
 
 function DoctorCard({ doctor }) {
+    const [showForm, setShowForm] = useState(false);
+
+    const handleBookAppointmentClick = () => {
+        setShowForm(true);
+    };
+
+    const handleFormClose = () => {
+        setShowForm(false);
+    };
+
     return (
         <div className='doctor-card'>
             <img src={doctor.image} alt={doctor.name} className='doctor-image' />
@@ -12,12 +23,16 @@ function DoctorCard({ doctor }) {
                 <p className='rating'>Rating: {doctor.rating}</p>
                 {/* add more doctor details here as needed */}
                 <div>
-                    <button className='book-appointment-btn'>
+                    <button className='book-appointment-btn'  onClick={handleBookAppointmentClick}>
                         <div>Book Appointment</div>
                         <div>No Booking Fee</div>
                     </button>
                 </div>
             </div>
+
+            {showForm && (
+                <AppointmentForm doctor={doctor} onClose={handleFormClose} />
+            )}
         </div>
     );
 }
