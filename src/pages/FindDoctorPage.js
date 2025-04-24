@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import FindDoctorSearch from '../Components/FindDoctorSearch/FindDoctorSearch';
+import DoctorCard from '../Components/DoctorCard/DoctorCard';
 import doctorsData from '../doctors.json';
 import './FindDoctorPage.css';
 
@@ -42,21 +43,15 @@ function FindDoctorPage() {
             {loading && <p>Loading doctors...</p>}
             {error && <p>Error: {error.message}</p>}
 
-            {searchResults.length > 0 ? (
-                <ul>
-                    {searchResults.map((doctor) => (
-                        <li key={doctor.id}>
-                            {doctor.name} - {doctor.speciality}
-                            <br />
-                            Experience: {doctor.experience} years
-                            <br />
-                            Rating: {doctor.rating}
-                        </li>
-                    ))}
-                </ul>
-            ) : (
-                <p>No doctors found for that speciality.</p>
-            )}
+            <div className='search-results-container'>
+                {searchResults.length > 0 ? (
+                    searchResults.map((doctor) => (
+                        <DoctorCard key={doctor.id} doctor={doctor} />
+                    ))
+                ) : (
+                    <p className='no-doctors-found'>No doctors found for that speciality.</p>
+                )}
+            </div>
         </div>
     );
 }
