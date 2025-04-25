@@ -9,8 +9,12 @@ function AppointmentForm({ doctor, onClose, onAppointmentBooked }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Here you would typically handle the form submission,
-        // e.g., send the data to an API endpoint.
+
+        const appointmentDetails = {
+            date: appointmentDate,
+            time: appointmentTime,
+        };
+
         console.log('Appointment Details:');
         console.log('Doctor:', doctor.name);
         console.log('Patient Name:', patientName);
@@ -20,7 +24,7 @@ function AppointmentForm({ doctor, onClose, onAppointmentBooked }) {
 
         // Simulate successful booking
         setTimeout(() => {
-            onAppointmentBooked();
+            onAppointmentBooked(doctor, appointmentDetails, patientName, phoneNumber);
         }, 1000);
         
         // After submitting, you might want to  close the form

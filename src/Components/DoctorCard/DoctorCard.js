@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './DoctorCard.css';
 import AppointmentForm from '../AppointmentForm/AppointmentForm';
 
-function DoctorCard({ doctor }) {
+function DoctorCard({ doctor, onBookAppointment }) {
     const [showForm, setShowForm] = useState(false);
     const [isBooked, setIsBooked] = useState(false);
 
@@ -38,7 +38,7 @@ function DoctorCard({ doctor }) {
                     {!isBooked ? (
                         <button
                             className='book-appointment-btn'
-                            onClick={handleBookAppointmentClick}
+                            onClick={() => onBookAppointment(doctor)}
                         >
                             <div>Book Appointment</div>
                             <div>No Booking Fee</div>

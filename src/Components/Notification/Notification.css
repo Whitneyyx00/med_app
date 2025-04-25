@@ -1,0 +1,53 @@
+.notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 350px; /* Adjust width as needed */
+}
+
+.notification {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    border-top: 5px solid #4CAF50; /* Green accent color */
+}
+
+.notification h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #4CAF50;
+    font-size: 1.5em;
+}
+
+.notification p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.notification strong {
+    font-weight: bold;
+    color: #555;
+}
+
+.notification .cancel-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.notification .cancel-button:hover {
+    background-color: #d32f2f;
+}
