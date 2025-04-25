@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import FindDoctorSearch from './FindDoctorSearch/FindDoctorSearch';
 import DoctorCard from './DoctorCard/DoctorCard';
+import AppointmentForm from './AppointmentForm/AppointmentForm';
 import doctorsData from '../doctors.json';
 import './BookingConsultation.css';
-import AppointmentForm from './AppointmentForm/AppointmentForm';
 
 function BookingConsultation({ onAppointmentBooked }) {
     const [searchResults, setSearchResults] = useState([]);
@@ -64,8 +64,8 @@ function BookingConsultation({ onAppointmentBooked }) {
 
             <div className='search-results'>
                 {searchResults.length > 0 ? (
-                    searchResults.map((doctor) => (
-                        <DoctorCard key={doctor.id} doctor={doctor} onBookAppointment={handleBookAppointmentClick} />
+                    searchResults.map((doctor, index) => (
+                        <DoctorCard key={doctor.id} doctor={doctor} onBookAppointment={handleBookAppointmentClick} serialNumber={index + 1} />
                     ))
                 ) : (
                     <p>No doctors found for that speciality.</p>

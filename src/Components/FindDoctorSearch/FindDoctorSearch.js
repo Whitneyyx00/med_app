@@ -87,7 +87,7 @@ const FindDoctorSearch = ({ onSearch }) => {
                 onChange={handleInputChange}
                 onFocus={handleInputFocus}
                 onBlur={handleInputBlur}
-                onKeyPress={handleKeyPress}
+                onClick={handleKeyPress}
                 className='search-input'
             />
 
