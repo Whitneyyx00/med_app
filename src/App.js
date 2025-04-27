@@ -8,6 +8,7 @@ import InstantConsultation from './Components/InstantConsultationBooking/Instant
 import FindDoctorPage from './pages/FindDoctorPage';
 import BookingConsultation from './Components/BookingConsultation';
 import Notification from './Components/Notification/Notification';
+import Reviews from './pages/Reviews';
 
 function App() {
     const [isBooked, setIsBooked] = useState(false);
@@ -50,6 +51,7 @@ function App() {
         <Route path="/instant-consultation" element={<InstantConsultation />} />
         <Route path='/find-a-doctor' element={<FindDoctorPage />} />
         <Route path='/book-consultation' element={<BookingConsultation onAppointmentBooked={handleAppointmentBooked} />} />
+        <Route path='/reviews' element={<Reviews />} />
       </Routes>
     </BrowserRouter>
   );
