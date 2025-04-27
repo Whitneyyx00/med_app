@@ -1,10 +1,11 @@
 .doctor-card {
     display: flex;
     flex-direction: column; /* Stack items vertically */
-    border: 1px solid #ccc;
+    border: 1px solid #daa38f;
     border-radius: 8px;
     padding: 16px;
     margin-bottom: 16px;
+    background-color: #e9d7c0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -29,26 +30,46 @@
 .doctor-card-info h2 {
     margin-top: 0;
     margin-bottom: 8px;
-    color: #333;
+    color: #9b7d61;
 }
 
 .doctor-card-info .specialty {
-    color: #666;
+    color: #92ada4;
     margin-bottom: 4px;
 }
 
 .doctor-card-info .experience {
-    color: #666;
+    color: #92ada4;
     margin-bottom: 4px;
 }
 
 .doctor-card-info .rating {
-    color: #666;
+    color: #92ada4;
     margin-bottom: 4px;
 }
 
+.review-link {
+    display: block;
+    background-color: #9b7d61;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.review-link:hover {
+    background-color: #daa38f;
+}
+
 .book-appointment-btn {
-    background-color: #007bff;
+    background-color: #9b7d61;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -58,5 +79,5 @@
 }
 
 .book-appointment-btn:hover {
-    background-color: #0056b3;
+    background-color: #daa38f;
 }

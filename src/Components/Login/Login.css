@@ -1,8 +1,6 @@
-/* Login.css */
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #e9d7c0;
     margin: 0;
     padding: 0;
     display: flex;
@@ -15,13 +13,13 @@ body {
 .login-container {
     width: 400px;
     margin: 100px 620px;
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.login-container h2 {
+.login-text h2 {
     text-align: center;
     color: #333;
 }
@@ -34,14 +32,14 @@ body {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #555;
+    color: #333;
 }
 
 .form-group input[type="email"],
 .form-group input[type="password"] {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #daa38f;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 5px;
@@ -53,8 +51,8 @@ body {
 }
 
 .form-buttons button {
-    background-color: #947eb0; /* Teal */
-    color: #D8BFAA; /* Beige */
+    background-color: #9b7d61;
+    color: #fed8a6;
     padding: 10px 20px;
     border: none;
     font-weight: bold;
@@ -64,7 +62,7 @@ body {
 }
 
 .form-buttons button:hover {
-    background-color: #72195a; /* A darker shade of teal */
+    background-color: #daa38f;
 }
 
 .signup-link {
@@ -73,7 +71,7 @@ body {
 }
 
 .signup-link a {
-    color: #00a6a6;
+    color: #daa38f;
     text-decoration: none;
 }
 

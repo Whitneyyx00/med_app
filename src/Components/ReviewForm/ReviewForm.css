@@ -1,5 +1,5 @@
 .review-button {
-    background-color: #007bff;
+    background-color: #9b7d61;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -8,15 +8,15 @@
 }
 
 .review-button:hover {
-    background-color: #0056b3;
+    background-color: #daa38f;
 }
 
 .review-form {
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #daa38f;
     margin-top: 10px;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #e9d7c0;
 }
 
 .review-form h3 {
@@ -26,6 +26,7 @@
 
 .rating {
     margin-bottom: 15px;
+    color: #333;
 }
 
 .star {
@@ -37,20 +38,21 @@
 }
 
 .star.active {
-    color: #ffc107;
+    color: #fed8a6;
 }
 
 textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #daa38f;
     border-radius: 4px;
     resize: vertical;
+    background-color: #f9f9f9;
 }
 
 button[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #9b7d61;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -60,5 +62,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #3e8e41;
+    background-color: #daa38f;
 }

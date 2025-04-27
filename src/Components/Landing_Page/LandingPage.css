@@ -13,7 +13,8 @@ body {
 
 /* Hero Section Styles */
 .hero-section {
-    height: 500px;
+    height: 100vh;
+    width: 100vw;
     /* Reduced height */
     display: flex;
     align-items: center;
@@ -21,7 +22,7 @@ body {
     text-align: center;
     padding: 20px;
     /* Gradient Background */
-    background: linear-gradient(to right, #2190FF, #b673f8);
+    background: linear-gradient(315deg, hsla(34, 48%, 83%, 1) 0%, hsla(34, 98%, 82%, 1) 50%, hsla(16, 50%, 71%, 1) 80%);
     color: white;
     /* Ensure text is readable on the gradient background */
 }
@@ -32,23 +33,23 @@ section.hero-section {
 
 .hero-content h1,
 .hero-content p {
-    color: white;
+    color: #555;
     /* Ensure text is readable on the gradient background */
 }
 
 .hero-content a {
-    background-color: #914add !important;
+    background-color: #cd8469 !important;
     color: white;
 }
 
 .hero-content a:hover {
-    background-color: #22a4d3;
+    background-color: #9b4f34;
     font-weight: bold;
     outline: 1px solid black;
 }
 
 .book-appointment-button {
-    background-color: #914add;
+    background-color: #cd8469;
     color: white;
     display: inline-block;
     padding: 12px 24px;
@@ -59,7 +60,7 @@ section.hero-section {
 }
 
 .book-appointment-button:hover {
-    background-color: #22a4d3;
+    background-color: #9b4f34;
     font-weight: bold;
     outline: 1px solid black;
 }

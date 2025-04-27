@@ -51,7 +51,7 @@ function DoctorCard({ doctor, onBookAppointment, serialNumber }) {
                             Cancel Appointment
                         </button>
                     )}
-                    <Link to={`/reviews/${doctor.id}`} className="review-link">
+                    <Link to={`/reviews`} className="review-link">
                         View Reviews
                     </Link>
                 </div>

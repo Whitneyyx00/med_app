@@ -50,6 +50,8 @@ const Sign_Up = () => {
         <div className="container" style={{ marginTop: '5%' }}>
             <div className="signup-grid">
                 <div className="signup-form">
+                    <h2>Sign Up</h2>
+                    <p>Already have an account? <a href='/login'>Login here</a></p>
                     <form method="POST" onSubmit={register}>
                         <div className="form-group">
                             <label htmlFor="name">Name</label>

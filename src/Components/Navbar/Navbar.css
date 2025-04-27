@@ -4,7 +4,7 @@
 }
 
 header {
-    background-color: #947eb0;
+    background-color: #9b7d61;
     position: fixed;
     top: 0;
     width: 100%;
@@ -18,10 +18,11 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #947eb0;
+    background-color: #9b7d61;
     position: fixed;
     top: 0;
     width: 100%;
+    height: auto;
     z-index: 100;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -31,7 +32,8 @@ header {
     display: flex;
     align-items: center;
     font-size: 1.2rem;
-    color: #d8bfaa;
+    color: #fed8a6;
+    margin-left: 10px;
 }
 
 .logo img {
@@ -41,6 +43,9 @@ header {
 
 .logo a {
     text-decoration: none;
+    color: #daa38f;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .nav-links {
@@ -55,7 +60,7 @@ header {
 }
 
 .nav-links li a {
-    color: #d8bfaa;
+    color: #fed8a6;
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
@@ -76,19 +81,24 @@ header {
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
-    color: white;
-    background-color: #72195A;
+    color: #333;
+    background-color: #daa38f;
     transition: background-color 0.3s ease;
     border: none;
     cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .login-button:hover,
 .signup-button:hover {
-    background-color: #541242;
+    background-color: #e9d7c0;
 }
 
 body {
     margin: 0;
     padding-top: 60px;
+    background-color: #e9d7c0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #9b7d61;
 }
