@@ -102,3 +102,11 @@
 .profile-container button:hover {
     background-color: #0056b3;
 }
+
+.edit-button {
+    background-color: #CC8899 !important;
+}
+
+.edit-button:hover {
+    background-color: #C08081 !important;
+}
