@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './Sign_Up.css'
 import { useNavigate } from 'react-router-dom';
 import { API_URL } from '../../config';
+import { AuthContext } from '../../AuthContext';
 
 const Sign_Up = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
+    const [address, setAddress] = useState('');
     const [password, setPassword] = useState('');
     const [showerr, setShowerr] = useState('');
     const navigate = useNavigate();
+    const { login } = useContext(AuthContext);
 
     const register = async (e) => {
         e.preventDefault();
@@ -24,17 +27,27 @@ const Sign_Up = () => {
                 email: email,
                 password: password,
                 phone: phone,
+                address: address,
             }),
         });
 
         const json = await response.json();
-        if (json.authtoken) {
-            sessionStorage.setItem("auth-token", json.authtoken);
-            sessionStorage.setItem("name", name);
-            sessionStorage.setItem("phone", phone);
-            sessionStorage.setItem("email", email);
-            navigate("/");
-            window.location.reload();
+        
+        if (response.ok) {
+            login({
+                authToken: json.authtoken,
+                email: email,
+                name: name,
+                phone: phone,
+                address: address,
+            });
+
+            sessionStorage.setItem('auth-token', json.authtoken);
+            sessionStorage.setItem('name', name);
+            sessionStorage.setItem('phone', phone);
+            sessionStorage.setItem('email', email);
+            sessionStorage.setItem('address', address);
+            navigate('/');
         } else {
             if (json.errors) {
                 for (const error of json.errors) {
@@ -60,6 +73,10 @@ const Sign_Up = () => {
                         <div className="form-group">
                             <label htmlFor="phone">Phone</label>
                             <input value={phone} onChange={(e) => setPhone(e.target.value)} type="tel" name="phone" id="phone" className="form-control" placeholder="Enter your phone number" aria-describedby="helpId" />
+                        </div>
+                        <div className='form-group'>
+                            <label htmlFor='address'>Address:</label>
+                            <input value={address} onChange={(e) => setAddress(e.target.value)} type='text' name='address' id='address' className='form-control' placeholder='Enter your address' aria-describedby='helpId' />
                         </div>
                         <div className="form-group">
                             <label htmlFor="email">Email</label>
