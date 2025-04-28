@@ -1,6 +1,6 @@
 .give-review-form {
     padding: 30px;
-    border: 1px solid #e9d7c0;
+    border: 1px solid var(--secondary-accent);
     margin-top: 20px;
     border-radius: 12px;
     background-color: #f9f9f9;
@@ -8,7 +8,7 @@
 }
 
 .give-review-form h3 {
-    color: #9b7d61;
+    color: #333;
     margin-bottom: 20px;
     text-align: center;
     font-size: 24px;
@@ -29,11 +29,11 @@
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #daa38f;
+    border: 1px solid var(--secondary-accent);
     border-radius: 8px;
     resize: vertical;
     font-size: 16px;
-    color: #333;
+    color: var(--primary-background);
 }
 
 .rating {
@@ -51,19 +51,19 @@
 .star {
     cursor: pointer;
     font-size: 2.5em;
-    color: #fed8a6;
+    color: #fff700;
     display: inline-block;
     margin-right: 8px;
     transition: color 0.2s;
 }
 
 .star.active {
-    color: #daa38f;
+    color: #f5c400;
 }
 
 button[type="submit"] {
-    background-color: #9b7d61;
-    color: white;
+    background-color: var(--interactive-color);
+    color: var(--primary-background);
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
@@ -75,5 +75,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #92ada4;
+    background-color: hsl(327, 78%, 85%);
 }

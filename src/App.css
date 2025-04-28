@@ -1,3 +1,11 @@
+:root {
+	--primary-text: #8c9db1;
+	--primary-background: #1a1e3d;
+	--secondary-accent: #d2c1e1;
+	--interactive-color: #f4b8d8;
+	--secondary-background: #4b5b81;
+}
+
 body, html {
     margin: 0;
     padding: 0;

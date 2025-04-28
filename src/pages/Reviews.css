@@ -1,13 +1,14 @@
 .reviews-page-container {
     padding: 30px;
-    background-color: #e9d7c0;
+    background-color: var(--primary-text);
+    color: #222;
     min-height: 100vh;
     margin-top: 45px;
 }
 
 .reviews-page-container h1 {
     margin-bottom: 30px;
-    color: #9b7d61;
+    color: #222;
     text-align: center;
 }
 
@@ -20,12 +21,19 @@ table {
 td, th {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid var(--secondary-accent);
+    text-align: center;
 }
 
 th {
-    background-color: #daa38f;
+    background-color: var(--primary-background);
     color: white;
+    text-align: center;
+    font-size: 19px;
+}
+
+td {
+    font-size: 18px;
 }
 
 tr:nth-child(even) {
@@ -33,8 +41,8 @@ tr:nth-child(even) {
 }
 
 .review-button {
-    background-color: #9b7d61;
-    color: white;
+    background-color: var(--interactive-color);
+    color: var(--primary-background);
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
@@ -43,7 +51,7 @@ tr:nth-child(even) {
 }
 
 .review-button:hover {
-    background-color: #92ada4;
+    background-color: hsl(327, 78%, 75%%);
 }
 
 /* Modal Styles */

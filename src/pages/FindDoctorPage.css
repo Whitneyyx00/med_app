@@ -13,10 +13,17 @@
 .find-doctor-page h1 {
     text-align: center;
     margin-bottom: 20px;
+    color: #222;
+    margin-top: 20px;
 }
 
 .search-results-container {
     width: 80%;
     max-width: 900px;
     margin-top: 20px;
+}
+
+.no-doctors-found {
+    color: #222;
+    font-size: 18px;
 }

@@ -8,11 +8,13 @@ const ProfileForm = () => {
         name: '',
         phone: '',
         email: '',
+        address: '',
     });
     const [updatedDetails, setUpdatedDetails] = useState({
         name: '',
         phone: '',
         email: '',
+        address: '',
     });
     const [editMode, setEditMode] = useState(false);
     const navigate = useNavigate();
@@ -85,6 +87,7 @@ const ProfileForm = () => {
             if (response.ok) {
                 sessionStorage.setItem('name', updatedDetails.name);
                 sessionStorage.setItem('phone', updatedDetails.phone);
+                sessionStorage.setItem('address', updatedDetails.address);
                 setUserDetails(updatedDetails);
                 setEditMode(false);
                 alert('Profile updated successfully!');
@@ -132,6 +135,16 @@ const ProfileForm = () => {
                             disabled
                         />
                     </label>
+                    <label htmlFor='address'>
+                        Address:
+                        <input
+                            type='text'
+                            id='address'
+                            name='address'
+                            value={updatedDetails.address}
+                            onChange={handleInputChange}
+                        />
+                    </label>
                     <button type='submit'>Save</button>
                 </form>
             ) : (
@@ -139,6 +152,7 @@ const ProfileForm = () => {
                     <h1>Welcome, {userDetails.name}</h1>
                     <p><b>Email:</b> {userDetails.email}</p>
                     <p><b>Phone:</b> {userDetails.phone}</p>
+                    <p><b>Address:</b> {userDetails.address}</p>
                     <button onClick={handleEdit} className='edit-button'>Edit</button>
                 </div>
             )}

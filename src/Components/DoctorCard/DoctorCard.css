@@ -1,12 +1,13 @@
 .doctor-card {
     display: flex;
     flex-direction: column; /* Stack items vertically */
-    border: 1px solid #daa38f;
+    border: 1px solid var(--secondary-accent);
     border-radius: 8px;
     padding: 16px;
     margin-bottom: 16px;
-    background-color: #e9d7c0;
+    background-color: var(--secondary-background);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 .doctor-card-info {
@@ -16,10 +17,11 @@
 }
 
 .doctor-image {
-    width: 100px;
-    height: 100px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
     margin-right: 16px;
+    margin-left: 36px;
     object-fit: cover;
 }
 
@@ -30,28 +32,28 @@
 .doctor-card-info h2 {
     margin-top: 0;
     margin-bottom: 8px;
-    color: #9b7d61;
+    color: #333;
 }
 
-.doctor-card-info .specialty {
-    color: #92ada4;
+.doctor-card-details-container .speciality {
+    color: #ddd !important;
     margin-bottom: 4px;
 }
 
-.doctor-card-info .experience {
-    color: #92ada4;
+.doctor-card-details-container .experience {
+    color: #aaa !important;
     margin-bottom: 4px;
 }
 
-.doctor-card-info .rating {
-    color: #92ada4;
+.doctor-card-details-container .rating {
+    color: #fff700;
     margin-bottom: 4px;
 }
 
 .review-link {
     display: block;
-    background-color: #9b7d61;
-    color: white;
+    background-color: var(--interactive-color);
+    color: var(--primary-background);
     border: none;
     padding: 8px 16px;
     margin-top: 10px;
@@ -65,12 +67,12 @@
 }
 
 .review-link:hover {
-    background-color: #daa38f;
+    background-color: hsl(327, 78%, 85%);
 }
 
 .book-appointment-btn {
-    background-color: #9b7d61;
-    color: white;
+    background-color: var(--interactive-color);
+    color: var(--primary-background);
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -79,5 +81,5 @@
 }
 
 .book-appointment-btn:hover {
-    background-color: #daa38f;
+    background-color: hsl(327, 78%, 85%);
 }

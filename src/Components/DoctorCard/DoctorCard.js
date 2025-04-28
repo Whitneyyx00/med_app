@@ -31,7 +31,7 @@ function DoctorCard({ doctor, onBookAppointment, serialNumber }) {
             <img src={doctor.image} alt={doctor.name} className="doctor-image" />
             <div className="doctor-card-details-container">
                 <h2>{doctor.name}</h2>
-                <p className="specialty">Specialty: {doctor.specialty}</p>
+                <p className="speciality">Speciality: {doctor.speciality}</p>
                 <p className="experience">Experience: {doctor.experience} years</p>
                 <p className="rating">Rating: {doctor.rating}</p>
                 <div>

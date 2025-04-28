@@ -1,6 +1,6 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #e9d7c0;
+    background-color: var(--primary-background);
     margin: 0;
     padding: 0;
     display: flex;
@@ -39,10 +39,11 @@ body {
 .form-group input[type="password"] {
     width: 100%;
     padding: 8px;
-    border: 1px solid #daa38f;
+    border: 1px solid var(--secondary-accent);
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 5px;
+    color: var(--primary-background);
 }
 
 .form-buttons {
@@ -51,8 +52,8 @@ body {
 }
 
 .form-buttons button {
-    background-color: #9b7d61;
-    color: #fed8a6;
+    background-color: var(--interactive-color);
+    color: var(--primary-background);
     padding: 10px 20px;
     border: none;
     font-weight: bold;
@@ -62,7 +63,7 @@ body {
 }
 
 .form-buttons button:hover {
-    background-color: #daa38f;
+    background-color: hsl(327, 78%, 75%);
 }
 
 .signup-link {
@@ -71,7 +72,7 @@ body {
 }
 
 .signup-link a {
-    color: #daa38f;
+    color: var(--secondary-accent);
     text-decoration: none;
 }
 

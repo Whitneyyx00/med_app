@@ -7,7 +7,7 @@
 .search-input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #daa38f;
+    border: 1px solid var(--secondary-accent);
     border-radius: 5px;
     font-size: 19px;
     background-color: #f9f9f9;
@@ -19,8 +19,8 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #e9d7c0;
-    border: 1px solid #daa38f;
+    background-color: var(--secondary-background);
+    border: 1px solid var(--secondary-accent);
     border-top: none;
     border-radius: 0 0 5px 5px;
     list-style: none;
@@ -34,9 +34,11 @@
 .speciality-item {
     padding: 10px;
     cursor: pointer;
-    color: #333;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .speciality-item:hover {
-    background-color: #fed8a6;
+    background-color: var(--secondary-accent);
 }

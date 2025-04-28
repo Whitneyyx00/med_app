@@ -35,6 +35,7 @@ function Navbar() {
                             </button>
                             <div className='dropdown-content' style={{ display: showProfile ? 'block' : 'none' }}>
                                 <Link to='/profile'>Profile</Link>
+                                <Link to='/reports'>Your Reports</Link>
                                 <button onClick={logout} className='logout-button'>Logout</button>
                             </div>
                         </div>

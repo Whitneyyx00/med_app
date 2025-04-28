@@ -10,6 +10,7 @@ import BookingConsultation from './Components/BookingConsultation';
 import Notification from './Components/Notification/Notification';
 import Reviews from './pages/Reviews';
 import Profile from './pages/Profile';
+import ReportsLayout from './Components/ReportsLayout/ReportsLayout';
 
 function App() {
     const [isBooked, setIsBooked] = useState(false);
@@ -54,6 +55,7 @@ function App() {
         <Route path='/book-consultation' element={<BookingConsultation onAppointmentBooked={handleAppointmentBooked} />} />
         <Route path='/reviews' element={<Reviews />} />
         <Route path='/profile' element={<Profile />} />
+        <Route path='/reports' element={<ReportsLayout />} />
       </Routes>
     </BrowserRouter>
   );

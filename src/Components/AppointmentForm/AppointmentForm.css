@@ -12,12 +12,13 @@
 }
 
 .appointment-form {
-    background-color: #e9d7c0;
+    background-color: var(--secondary-background);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 500px; /* Adjust as needed */
     max-width: 90%;
+    color: var(--primary-text);
 }
 
 .appointment-form h2 {
@@ -33,22 +34,24 @@
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: black;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .form-group input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #daa38f;
+    border: 1px solid var(--secondary-accent);
     border-radius: 4px;
     box-sizing: border-box; /* Ensure padding is included in width */
     font-size: 16px;
+    color: var(--primary-background);
 }
 
 .submit-button {
-    background-color: #9b7d61;
-    color: white;
+    background-color: var(--interactive-color) !important;
+    color: var(--primary-background) !important;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -58,8 +61,8 @@
 }
 
 .cancel-button {
-    background-color: #daa38f;
-    color: white;
+    background-color: var(--secondary-accent) !important;
+    color: var(--primary-background) !important;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -68,9 +71,9 @@
 }
 
 .submit-button:hover {
-    background-color: #daa38f;
+    background-color: hsl(327, 78%, 85%) !important;
 }
 
 .cancel-button:hover {
-    background-color: #92ada4;
+    background-color: hsl(250, 27%, 90%) !important;
 }
