@@ -1,15 +1,9 @@
 const express = require('express');
 const cors = require('cors');
-const http = require('http');
 const connectToMongo = require('./db');
 const app = express();
-
-
-app.set('view engine','ejs')
-app.use(express.static('public'))
-
+const path = require('path');
 const PORT = process.env.PORT || 8181;
-
 
 // Middleware
 app.use(express.json());
@@ -21,13 +15,20 @@ connectToMongo();
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 
+// Serve frontend static files from build folder
+app.use(express.static(path.join(__dirname, 'build')));
+
+// Catch-all route for React routing
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+// Default root response
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-
-
-  // Start the server
+// Start server
 app.listen(PORT, () => {
-console.log(`Server is running on port http://localhost:${PORT}`);
-});
+    console.log(`Server is running on http://localhost:${PORT}`);
+})
