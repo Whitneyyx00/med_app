@@ -3,6 +3,8 @@ import  './ReportsLayout.css';
 import doctorsData from '../../doctors.json';
 
 const ReportsLayout = () => {
+    const reportPath = process.env.PUBLIC_URL + '/patient_report.pdf';
+
     const reports = doctorsData.map(doctor => ({
         id: doctor.id,
         doctorName: doctor.name,
@@ -30,8 +32,8 @@ const ReportsLayout = () => {
                         <td>{report.id}</td>
                         <td>{report.doctorName}</td>
                         <td>{report.doctorSpeciality}</td>
-                        <td><a href={report.viewLink} className='view-button'>View Report</a></td>
-                        <td><a href={report.downloadLink} className='download-button'>Download Report</a></td>
+                        <td><a href={reportPath} target='_blank' rel='noopener noreferrer' className='view-button'>View Report</a></td>
+                        <td><a href={reportPath} download='patient_report.pdf' className='download-button'>Download Report</a></td>
                     </tr>
                 ))}
             </tbody>
