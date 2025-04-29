@@ -3,66 +3,32 @@ import { API_URL } from '../../config';
 import { useNavigate } from 'react-router-dom';
 import './ProfileForm.css';
 
-const ProfileForm = () => {
-    const [userDetails,  setUserDetails] = useState({
-        name: '',
-        phone: '',
-        email: '',
-        address: '',
-    });
-    const [updatedDetails, setUpdatedDetails] = useState({
-        name: '',
-        phone: '',
-        email: '',
-        address: '',
-    });
+const ProfileForm = ({ onProfileUpdate, userDetails }) => {
+    const [updatedDetails, setUpdatedDetails] = useState({ ...userDetails });
     const [editMode, setEditMode] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
-        const authtoken = sessionStorage.getItem('auth-token');
-        if (!authtoken) {
-            navigate('/login');
-        } else {
-            fetchUserProfile();
-        }
-    }, [navigate]);
-
-    const fetchUserProfile = async () => {
-        try {
-            const authtoken = sessionStorage.getItem('auth-token');
-            const email = sessionStorage.getItem('email');
-            if (!authtoken) {
-                navigate('/login');
-                return;
-            }
-            const response = await fetch(`${API_URL}/api/auth/user`, {
-                headers: {
-                    'Authorization': `Bearer ${authtoken}`,
-                    'Email': email,
-                },
-            });
-            if (response.ok) {
-                const user = await response.json();
-                setUserDetails(user);
-                setUpdatedDetails(user);
-            } else {
-                throw new Error("Failed to fetch user profile");
-            }
-        } catch (error) {
-            console.error(error);
-        }
-    };
-
-    const handleEdit = () => {
-        setEditMode(true);
-    };
+        setUpdatedDetails(userDetails);
+    }, [userDetails]);
 
     const handleInputChange = (e) => {
-        setUpdatedDetails({
-            ...updatedDetails,
-            [e.target.name]: e.target.value,
-        });
+        const { name, value } = e.target;
+        if (name.startsWith('social.')) {
+            const socialField = name.split('.')[1];
+            setUpdatedDetails(prev => ({
+                ...prev,
+                social: {
+                    ...prev.social,
+                    [socialField]: value,
+                },
+            }));
+        } else {
+            setUpdatedDetails({
+                ...updatedDetails,
+                [name]: value,
+            });
+        }
     };
 
     const handleSubmit = async (e) => {
@@ -88,9 +54,11 @@ const ProfileForm = () => {
                 sessionStorage.setItem('name', updatedDetails.name);
                 sessionStorage.setItem('phone', updatedDetails.phone);
                 sessionStorage.setItem('address', updatedDetails.address);
-                setUserDetails(updatedDetails);
                 setEditMode(false);
                 alert('Profile updated successfully!');
+                if (onProfileUpdate) {
+                    onProfileUpdate(updatedDetails);
+                }
                 navigate('/');
             } else {
                 throw new Error("Failed to update profile");
@@ -102,7 +70,6 @@ const ProfileForm = () => {
 
     return  (
         <div className='profile-container'>
-            {editMode ? (
                 <form onSubmit={handleSubmit} className='profile-form'>
                     <h2>Profile Information</h2>
                     <label htmlFor='name'>
@@ -111,7 +78,7 @@ const ProfileForm = () => {
                             type='text'
                             id='name'
                             name='name'
-                            value={updatedDetails.name}
+                            value={updatedDetails.name || ''}
                             onChange={handleInputChange}
                         />
                     </label>
@@ -145,17 +112,60 @@ const ProfileForm = () => {
                             onChange={handleInputChange}
                         />
                     </label>
+                    <label htmlFor='bio'>
+                        Bio:
+                        <textarea
+                            id='bio'
+                            name='bio'
+                            value={updatedDetails.bio}
+                            onChange={handleInputChange}
+                        />
+                    </label>
+
+                    {/* Social Media Links */}
+                    <label>Social Links:</label>
+                    <label htmlFor='twitter'>
+                        Twitter:
+                        <input
+                            type='url'
+                            id='twitter'
+                            name='social.twitter'
+                            value={updatedDetails.social?.twitter || ''}
+                            onChange={handleInputChange}
+                        />
+                    </label>
+                    <label htmlFor='linkedin'>
+                        LinkedIn:
+                        <input
+                            type='url'
+                            id='linkedin'
+                            name='social.linkedin'
+                            value={updatedDetails.social?.linkedin || ''}
+                            onChange={handleInputChange}
+                        />
+                    </label>
+                    <label htmlFor='github'>
+                        GitHub:
+                        <input
+                            type='url'
+                            id='github'
+                            name='social.github'
+                            value={updatedDetails.social?.github || ''}
+                            onChange={handleInputChange}
+                        />
+                    </label>
+                    <label htmlFor='avatar'>
+                        Avatar URL:
+                        <input
+                            type='url'
+                            id='avatar'
+                            name='avatar'
+                            value={updatedDetails.avatar || ''}
+                            onChange={handleInputChange}
+                        />
+                    </label>
                     <button type='submit'>Save</button>
                 </form>
-            ) : (
-                <div className='profile-details'>
-                    <h1>Welcome, {userDetails.name}</h1>
-                    <p><b>Email:</b> {userDetails.email}</p>
-                    <p><b>Phone:</b> {userDetails.phone}</p>
-                    <p><b>Address:</b> {userDetails.address}</p>
-                    <button onClick={handleEdit} className='edit-button'>Edit</button>
-                </div>
-            )}
         </div>
     );
 };

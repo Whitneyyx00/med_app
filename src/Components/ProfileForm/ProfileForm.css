@@ -10,18 +10,6 @@
     color: var(--primary-text);
 }
 
-.profile-details {
-    border: 1px solid var(--secondary-accent);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    width: 90vw;
-    margin-top: 100px;
-    margin-left: 65px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: var(--primary-text);
-}
-
 .profile-details h1 {
     font-size: 26px;
     margin-bottom: 10px;
