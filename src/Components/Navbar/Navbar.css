@@ -21,8 +21,8 @@ header {
     background-color: var(--primary-background);
     position: fixed;
     top: 0;
-    width: 100%;
-    height: auto;
+    height: 12%;
+    width: 100%;;
     z-index: 100;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -45,7 +45,7 @@ header {
     text-decoration: none;
     color: var(--secondary-accent);
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 .nav-links {
@@ -62,13 +62,13 @@ header {
 .nav-links li a {
     color: var(--primary-text);
     text-decoration: none;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 1.6em;
 }
 
 .nav-links li a:hover {
     text-decoration: underline;
     font-weight: bold;
+    font-size: 1.7em;
 }
 
 .auth-buttons {
@@ -88,11 +88,14 @@ header {
     cursor: pointer;
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 1.4em;
 }
 
 .login-button:hover,
 .signup-button:hover {
     background-color: hsl(327, 78%, 85%);
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 body {

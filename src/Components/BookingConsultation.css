@@ -4,11 +4,18 @@
     align-items: center;
     padding: 20px;
     width: 100vw;
-    margin-top: 75px;
+    margin-top: 150px;
+    height: 100%;
 }
 
 .booking-consultation-container h1 {
     margin-bottom: 20px;
+    color: #222;
+}
+
+.no-doctors {
+    color: #222;
+    font-size: 18px;
 }
 
 .search-results {
@@ -18,5 +25,5 @@
     gap: 20px;
     margin-top: 20px;
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
 }

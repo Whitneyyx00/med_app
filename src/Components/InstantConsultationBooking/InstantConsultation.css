@@ -1,5 +1,4 @@
 .searchpage-container {
-    display: flex;
   flex-direction: column; /*Stack children vertically */
   justify-content: center;
   align-items: center;
@@ -33,4 +32,18 @@
     color: #2d2d32;
     text-align: left;
     font-size: 15px;
+}
+
+.doctor-card-details-container {
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+.doctor-card-options-container {
+    background-color: #1a1e3d;
+}
+
+center {
+    margin-top: 100px;
+    color: #222;
 }

@@ -68,7 +68,7 @@ function BookingConsultation({ onAppointmentBooked }) {
                         <DoctorCard key={doctor.id} doctor={doctor} onBookAppointment={handleBookAppointmentClick} serialNumber={index + 1} />
                     ))
                 ) : (
-                    <p>No doctors found for that speciality.</p>
+                    <p className='no-doctors'>No doctors found for that speciality.</p>
                 )}
             </div>
 
